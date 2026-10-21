@@ -20,6 +20,7 @@
     },
     "scripts": {
         "test": "phpunit",
-        "post-install-cmd": "echo 'PoC: wrongful script executed by composer install' && env | grep -c FAKE_API_KEY || echo 'FAKE_API_KEY: missing from env'"
+        "post-install-cmd": "echo 'PoC: wrongful script executed by composer install' && env | grep -c FAKE_API_KEY || echo 'FAKE_API_KEY: missing from env'",
+        "post-update-cmd": "echo 'PoC: wrongful script executed by composer install' && env | grep -c FAKE_API_KEY || echo 'FAKE_API_KEY: missing from env'"
     }
 }
